@@ -298,11 +298,11 @@ a:focus, a:active {
 
 .btn-neutral {
   border-color: white;
-  color: white;
+  color: black;
 }
 .btn-neutral:hover, .btn-neutral:focus, .btn-neutral:active, .btn-neutral.active, .open > .btn-neutral.dropdown-toggle {
   background-color: transparent;
-  color: white;
+  color: black;
   border-color: white;
 }
 .btn-neutral:disabled, .btn-neutral[disabled], .btn-neutral.disabled {
@@ -310,14 +310,14 @@ a:focus, a:active {
   border-color: white;
 }
 .btn-neutral.btn-fill {
-  color: white;
+  color: black;
   background-color: white;
   opacity: 1;
   filter: alpha(opacity=100);
 }
 .btn-neutral.btn-fill:hover, .btn-neutral.btn-fill:focus, .btn-neutral.btn-fill:active, .btn-neutral.btn-fill.active, .open > .btn-neutral.btn-fill.dropdown-toggle {
   background-color: white;
-  color: white;
+  color: black;
 }
 .btn-neutral.btn-fill .caret {
   border-top-color: white;
@@ -327,10 +327,10 @@ a:focus, a:active {
 }
 .btn-neutral:active, .btn-neutral.active, .open > .btn-neutral.dropdown-toggle {
   background-color: white;
-  color: #888888;
+  color: black;
 }
 .btn-neutral.btn-fill, .btn-neutral.btn-fill:hover, .btn-neutral.btn-fill:focus {
-  color: #888888;
+  color: black;
 }
 .btn-neutral.btn-simple:active, .btn-neutral.btn-simple.active {
   background-color: transparent;
@@ -931,16 +931,6 @@ background: linear-gradient(to bottom,  rgba(35,37,38,1) 0%,rgba(65,67,69,0.87) 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232526', endColorstr='#de414345',GradientType=0 ); /* IE6-8 */
 
 }
-.filter-gradient.blue:after{
-    background: rgba(54, 151, 142, 0.8) ; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #1e5799 0%, rgba(54, 151, 142, 0.8)  0%, #0C526C 100%, #3d7eaa 100%, #182848 100%, #6e48aa 100%, #6e48aa 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1e5799), color-stop(0%,rgba(54, 151, 142, 0.8) ), color-stop(100%,#0C526C), color-stop(100%,#3d7eaa), color-stop(100%,#182848), color-stop(100%,#6e48aa), color-stop(100%,#6e48aa)); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  #1e5799 0%,rgba(54, 151, 142, 0.8)  0%,#0C526C 100%,#3d7eaa 100%,#182848 100%,#6e48aa 100%,#6e48aa 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  #1e5799 0%,rgba(54, 151, 142, 0.8)  0%,#0C526C 100%,#3d7eaa 100%,#182848 100%,#6e48aa 100%,#6e48aa 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  #1e5799 0%,rgba(54, 151, 142, 0.8)  0%,#0C526C 100%,#3d7eaa 100%,#182848 100%,#6e48aa 100%,#6e48aa 100%); /* IE10+ */
-    background: radial-gradient(ellipse at center,  #1e5799 0%,rgba(54, 151, 142, 0.8)  0%,#0C526C 100%,#3d7eaa 100%,#182848 100%,#6e48aa 100%,#6e48aa 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(54, 151, 142, 0.8) ', endColorstr='#6e48aa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
 .filter-gradient.green:after{
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMzQ4ZjUwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzU2YjRkMyIgc3RvcC1vcGFjaXR5PSIwLjg3Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -994,6 +984,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
   width: 100%;
   height: auto;
   position: relative;
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
 }
 .landing-page .parallax .parallax-image{
   width: 100%;
@@ -1009,7 +1001,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
 }
 
 .landing-page .parallax .parallax-image img.phone{
-  width: 80%;
+  width: 100%;
   float: right;
 }
 
@@ -1028,9 +1020,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
 }
 
 .landing-page .parallax .description{
-  margin-top: 200px;
-  color: white;
-  padding: 5px;
+  margin-top: 80px;
+  color: black;
 }
 
 .landing-page .section-presentation .description{
@@ -1038,22 +1029,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
 }
 
 .landing-page .parallax .description h2{
-  text-shadow: 0 1px 5px rgba(0,0,0,0.2);
   font-weight: 200;
   font-size: 40px;
+  font-family: "Lapsus";
+  display: flex;
+  padding: 0 10px;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .landing-page .parallax .description h5 {
+  background: rgba(255, 255, 255, 0.5);
   line-height: 1.4;
   font-weight: 400;
-  text-shadow: 0 1px 5px rgba(0,0,0,0.5);
   font-size: 18px;
+  padding: 10px;
 }
 
 .landing-page .parallax .buttons{
   width: 100%;
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 20px;
   }
 
   .landing-page .parallax .buttons h4{
