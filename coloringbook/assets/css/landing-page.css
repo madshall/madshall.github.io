@@ -1037,6 +1037,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .landing-page .parallax .description h5 {
