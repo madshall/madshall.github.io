@@ -731,6 +731,9 @@ a:focus, a:active {
 .landing-page .section-description h5 {
   margin-top: 40px;
 }
+.landing-page .section-description h5 ul li {
+  text-align: left;
+}
 .landing-page .img-container {
   border-radius: 10px;
   overflow: hidden;
