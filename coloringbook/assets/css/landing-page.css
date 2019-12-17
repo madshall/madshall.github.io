@@ -731,9 +731,6 @@ a:focus, a:active {
 .landing-page .section-description h5 {
   margin-top: 40px;
 }
-.landing-page .section-description h5 ul li {
-  text-align: left;
-}
 .landing-page .img-container {
   border-radius: 10px;
   overflow: hidden;
@@ -878,7 +875,7 @@ a:focus, a:active {
       margin-bottom: 20px;
       font-size: 30px;
       position: relative;
-      line-height: 24px;
+      line-height: 30px;
 }
 
 .landing-page .navbar-top {
@@ -1048,7 +1045,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
   font-weight: 400;
   font-size: 18px;
   padding: 10px;
+  text-align: left;
 }
+
+.landing-page .parallax .description h5 ul li {
+  text-align: left;
+}
+
 
 .landing-page .parallax .buttons{
   width: 100%;
